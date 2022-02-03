@@ -3,54 +3,40 @@ var arr = ["Hi", "Hello", "Bonjour"];
 arr.push("Hola");
 // console.log(arr);
 
-
 // ====================================================================
 // ====================================================================
-// добавить с помощью push + 
+// добавить с помощью push +
 var arr0 = ["Hi", "Hello", "Bonjour", "Hola"];
 
 // append multiple values to the array
 arr0.push("Salut", "Hey");
 
-// вывод каждого элеме́нт 
+// вывод каждого элеме́нт
 for (var i = 0; i < arr0.length; i++) {
-//   console.log(arr0[i]);
+  //   console.log(arr0[i]);
 }
-
 
 // ====================================================================
 // ====================================================================
 // добавьление с помощью concat
-var arr1 = [
-    "apple",
-    "banana",
-    "cherry"
-  ];
-  
-  arr1 = arr1.concat([
-    "dragonfruit",
-    "elderberry",
-    "fig"
-  ]);
-  
-//   console.log(arr1);
+var arr1 = ["apple", "banana", "cherry"];
 
+arr1 = arr1.concat(["dragonfruit", "elderberry", "fig"]);
+
+//   console.log(arr1);
 
 // ====================================================================
 // ====================================================================
 // старый массив прибавить новую.
-const arr2 = [
-    "Hi",
-    "Hello",
-    "Bonjour",
-  ];
-  
-  const newArr = [
-    ...arr2,
-    "Salut",
-  ];
-  
+const arr2 = ["Hi", "Hello", "Bonjour"];
+
+const newArr = [...arr2, "Salut"];
+
 //   console.log(newArr);
 
-  // ====================================================================
 // ====================================================================
+// ====================================================================
+// добавьление в старый массив новую
+var fruits = ["Banana", "Orange"];
+var moreFruits = ["Apple", "Mango", "Lemon"];
+var allFruits = fruits.concat(moreFruits);

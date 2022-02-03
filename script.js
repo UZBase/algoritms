@@ -40,3 +40,29 @@ const newArr = [...arr2, "Salut"];
 var fruits = ["Banana", "Orange"];
 var moreFruits = ["Apple", "Mango", "Lemon"];
 var allFruits = fruits.concat(moreFruits);
+// console.log(allFruits);
+
+// ====================================================================
+// ====================================================================
+function removeItemOnce(arr5, value) {
+    var index = arr5.indexOf(value);
+    if (index > -1) {
+      arr5.splice(index, 1);
+    }
+    return arr5;
+  }
+  
+  function removeItemAll(arr5, value) {
+    var i = 0;
+    while (i < arr5.length) {
+      if (arr5[i] === value) {
+        arr5.splice(i, 1);
+      } else {
+        ++i;
+      }
+    }
+    return arr5;
+  }
+  // Usage
+  console.log(removeItemOnce([2,5,9,1,5,8,5], 5))
+  console.log(removeItemAll([2,5,9,1,5,8,5], 5))

@@ -64,5 +64,6 @@ function removeItemOnce(arr5, value) {
     return arr5;
   }
   // Usage
+  console.log([2,5,9,1,5,8,5]);
   console.log(removeItemOnce([2,5,9,1,5,8,5], 5))
   console.log(removeItemAll([2,5,9,1,5,8,5], 5))
